@@ -20,7 +20,7 @@
             </a>
             <ul class="collapse list-unstyled" id="querySubmenu">
                 <li>
-                    <a href="#"><i class="fa fa-chart-line"></i> Graficas</a>
+                    <a href="#"><i class="fa fa-chart-line fa-lg"></i> Graficas</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-table"></i> Tablas</a>
