@@ -3,7 +3,7 @@
     <div class="row container-fluid">
         <div class="col-md-2">
             <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i> Ocultar
             </button>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-align-justify"></i>
@@ -40,6 +40,6 @@ i.fa-github {
 }
 
 i.fa-github:hover {
-    animation: horizontal 3s infinite;
+    animation: vertical 5s infinite;
 }
 </style>

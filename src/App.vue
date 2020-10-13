@@ -4,6 +4,7 @@
     <Sidebar />
     <div id="content">
         <Nav />
+        <QueryForm />
         <Content />
     </div>
 </div>
@@ -13,13 +14,15 @@
 import Sidebar from './components/Sidebar'
 import Nav from './components/Nav'
 import Content from './components/Content'
+import QueryForm from './components/QueryForm'
 
 export default {
     name: "App",
     components: {
         Sidebar,
         Nav,
-        Content
+        Content,
+        QueryForm
     }
 };
 </script>

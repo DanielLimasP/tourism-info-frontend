@@ -133,6 +133,7 @@ span {
 #sidebar ul li a:hover {
     color: #32703d;
     background: #fff;
+    animation: vertical 10s;
 }
 
 #sidebar ul li a i {
@@ -204,6 +205,7 @@ a.article:hover {
 .btn-info:hover {
     background-color: #fff;
     color: #32703d;
+    animation: vertical 5s infinite;
 }
 
 i.fa-github {
@@ -321,6 +323,9 @@ i.fa-github {
 
 /* ---------------------------------------------------
     ANIMATIONS
+
+    Source: 
+    https://www.alltechnotricks.com/Blog/font_awesome_animation_css.html
 ----------------------------------------------------- */
 
 @keyframes wrench {

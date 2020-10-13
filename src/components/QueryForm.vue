@@ -1,21 +1,39 @@
 <template>
 <form action="#">
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="sel1">Año:</label>
+            <select class="form-control" id="sel1">
+                <option>2019</option>
+                <option>2020</option>
+            </select>
         </div>
-        <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
-    </div>
-
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
-        <div class="input-group-append">
-            <span class="input-group-text">@example.com</span>
+        <div class="col-md-3">
+            <label for="sel1">Categoria:</label>
+            <select class="form-control" id="sel1">
+                <option>Densidad</option>
+                <option>Derrama</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="sel1">Ciudad:</label>
+            <select class="form-control" id="sel1">
+                <option>Chihuahua</option>
+                <option>Juarez</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="sel1">Region:</label>
+            <select class="form-control" id="sel1">
+                <option>Desierto</option>
+                <option>Arqueologica</option>
+            </select>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">
+        <button type="submit" class="btn btn-info mt-4 mb-4 col-md-4 mx-auto">Consultar</button>
+    </div>
 </form>
-</div>
 </template>
 
 <script>

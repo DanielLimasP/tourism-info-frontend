@@ -1,6 +1,6 @@
 <template>
+<div class="line"></div>
 <h2>Content goes here</h2>
-
 <div class="line"></div>
 </template>
 
