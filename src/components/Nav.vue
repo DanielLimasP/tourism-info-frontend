@@ -12,13 +12,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Coffe</a>
+                    <a class="nav-link" href="#"><i class="fa fa-mug-hot"></i> Coffe</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Github</a>
+                    <a class="nav-link" href="#"><i class="fa fa-github"></i> Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#"><i class="fa fa-user"></i> Login</a>
                 </li>
             </ul>
         </div>

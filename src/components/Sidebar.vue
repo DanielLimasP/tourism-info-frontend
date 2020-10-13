@@ -7,60 +7,42 @@
     </div>
 
     <ul class="list-unstyled components">
-        <li class="active">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <li>
+            <a href=" #">
                 <i class="fas fa-home"></i>
-                Home
+                Overview
             </a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
+        </li>
+        <li>
+            <a href="#querySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fas fa-search"></i>
+                Consulta
+            </a>
+            <ul class="collapse list-unstyled" id="querySubmenu">
                 <li>
-                    <a href="#">Home 1</a>
+                    <a href="#"><i class="fa fa-chart-line"></i> Graficas</a>
                 </li>
                 <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
+                    <a href="#"><i class="fa fa-table"></i> Tablas</a>
                 </li>
             </ul>
         </li>
         <li>
             <a href="#">
-                <i class="fas fa-briefcase"></i>
-                About
-            </a>
-            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                <i class="fas fa-copy"></i>
-                Pages
-            </a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-image"></i>
-                Portfolio
+                <i class="fas fa-chart-bar"></i>
+                Stats
             </a>
         </li>
         <li>
             <a href="#">
                 <i class="fas fa-question"></i>
-                FAQ
+                Guia
             </a>
         </li>
         <li>
             <a href="#">
                 <i class="fas fa-paper-plane"></i>
-                Contact
+                Contacto
             </a>
         </li>
     </ul>
