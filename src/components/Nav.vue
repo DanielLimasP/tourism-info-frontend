@@ -12,7 +12,7 @@
         <div class="container col-md-8">
             <div class="d-flex justify-content-center">
                 <div class="searchbar">
-                    <input v-model="query" @keydown="searchBarQuery" class="search_input" type="text" name="" placeholder="Busqueda por ciudad o region">
+                    <input v-model="query" @keyup="searchBarQuery" class="search_input" type="text" name="" placeholder="Busqueda por ciudad o region">
                     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                 </div>
             </div>
@@ -39,16 +39,18 @@ export default {
     methods: {
         async searchBarQuery() {
             console.log(this.query)
+            let query_string = this.query.toString()
             // Query Params
             // ?year=2020&city=Juarez
-            let fetch_url = 'http://localhost:420/info/query?year="2020"?wildcard="' + this.query + '"'
+            let fetch_url = "https://8e11265de0cf.ngrok.io/info/query/?year=2020&wildcard=" + query_string
 
-            const rawResponse = fetch(fetch_url, {
-                method: 'get'
+            await fetch(fetch_url, {
+                method: 'GET'
+            }).then(rawResponse => {
+                return rawResponse.json();
+            }).then(jsonResponse => {
+                console.log(jsonResponse);
             });
-            const content = await rawResponse.json();
-
-            console.log(content);
         }
     }
 };
