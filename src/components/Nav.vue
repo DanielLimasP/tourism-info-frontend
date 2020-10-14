@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="row container-fluid">
-        <div class="col-md-2">
+        <div class="col-md-2 ml-1 mr-1">
             <button type="button" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-bars"></i> Ocultar
             </button>
@@ -12,7 +12,7 @@
         <div class="container col-md-8">
             <div class="d-flex justify-content-center">
                 <div class="searchbar">
-                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <input v-model="query" @keydown="printQuery" class="search_input" type="text" name="" placeholder="Search...">
                     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                 </div>
             </div>
@@ -31,6 +31,16 @@
 <script>
 export default {
     name: "Nav",
+    data() {
+        return {
+            query: ''
+        }
+    },
+    methods: {
+        printQuery() {
+            console.log(this.query)
+        }
+    }
 };
 </script>
 

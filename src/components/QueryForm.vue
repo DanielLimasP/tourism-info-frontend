@@ -1,6 +1,6 @@
 <template>
 <form action="#">
-    <div class="row">
+    <div class="row m-2">
         <div class="col-md-3">
             <label for="sel1">Año:</label>
             <select class="form-control" id="sel1">
@@ -30,7 +30,7 @@
             </select>
         </div>
     </div>
-    <div class="row">
+    <div class="row m-2">
         <button type="submit" class="btn btn-info mt-4 mb-4 col-md-4 mx-auto">Consultar</button>
     </div>
 </form>
