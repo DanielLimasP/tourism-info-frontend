@@ -12,7 +12,7 @@
         <div class="container col-md-8">
             <div class="d-flex justify-content-center">
                 <div class="searchbar">
-                    <input v-model="query" @keydown="printQuery" class="search_input" type="text" name="" placeholder="Search...">
+                    <input v-model="query" @keydown="searchBarQuery" class="search_input" type="text" name="" placeholder="Busqueda por ciudad o region">
                     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                 </div>
             </div>
@@ -37,8 +37,18 @@ export default {
         }
     },
     methods: {
-        printQuery() {
+        async searchBarQuery() {
             console.log(this.query)
+            // Query Params
+            // ?year=2020&city=Juarez
+            let fetch_url = 'http://localhost:420/info/query?year="2020"?wildcard="' + this.query + '"'
+
+            const rawResponse = fetch(fetch_url, {
+                method: 'get'
+            });
+            const content = await rawResponse.json();
+
+            console.log(content);
         }
     }
 };
