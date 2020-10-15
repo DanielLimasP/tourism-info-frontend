@@ -67,7 +67,7 @@
     <!-- Here we render the result of the queries -->
     <ul id="array-rendering">
         <li v-for="item in query_result_array" :key="item">
-            <Result :data="item" />
+            <Result :item="item" />
         </li>
     </ul>
 </div>
@@ -106,7 +106,7 @@ export default {
                 //console.log(jsonResponse);
                 return jsonResponse
             });
-            console.log(query_result)
+            //console.log(query_result)
             this.query_result_array = query_result.result
             console.log(this.query_result_array)
         }
