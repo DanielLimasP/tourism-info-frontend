@@ -65,7 +65,11 @@
         </form>
     </div>
     <!-- Here we render the result of the queries -->
-    <Result :data="query_result" />
+    <ul id="array-rendering">
+        <li v-for="item in query_result_array" :key="item">
+            <Result :data="item" />
+        </li>
+    </ul>
 </div>
 </template>
 
@@ -83,7 +87,7 @@ export default {
     data() {
         return {
             query: '',
-            query_result: {}
+            query_result_array: []
         }
     },
     methods: {
@@ -103,8 +107,8 @@ export default {
                 return jsonResponse
             });
             console.log(query_result)
-            this.query_result = query_result
-            console.log(this.query_result)
+            this.query_result_array = query_result.result
+            console.log(this.query_result_array)
         }
     }
 };

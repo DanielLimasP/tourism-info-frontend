@@ -1,6 +1,6 @@
 <template>
 <div class="line"></div>
-<h2>{{ data.result }}</h2>
+<h2>{{ data.category }}</h2>
 <div class="line"></div>
 </template>
 
