@@ -60,12 +60,12 @@
                 </div>
             </div>
             <div class="row mt-2">
-                <button type="submit" class="btn btn-info mt-4 mb-4 col-md-4 mx-auto">Consultar</button>
+                <button type="submit" class="btn btn-info mt-4 mb-4 col-md-3 mx-auto">Consultar</button>
             </div>
         </form>
     </div>
     <!-- Here we render the result of the queries -->
-    <Result />
+    <Result :data="query_result" />
 </div>
 </template>
 
@@ -82,7 +82,8 @@ export default {
     },
     data() {
         return {
-            query: ''
+            query: '',
+            query_result: {}
         }
     },
     methods: {
@@ -102,6 +103,8 @@ export default {
                 return jsonResponse
             });
             console.log(query_result)
+            this.query_result = query_result
+            console.log(this.query_result)
         }
     }
 };

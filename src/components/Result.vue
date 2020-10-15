@@ -1,12 +1,15 @@
 <template>
 <div class="line"></div>
-<h2>Result of the queries goes here</h2>
+<h2>{{ data.result }}</h2>
 <div class="line"></div>
 </template>
 
 <script>
 export default {
-    name: "Result"
+    name: "Result",
+    props: {
+        data: {}
+    }
 };
 </script>
 
