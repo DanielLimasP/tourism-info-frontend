@@ -240,7 +240,7 @@ i.fa-github {
 
 .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 450px;
+    width: 300px;
     caret-color: #fff;
     transition: width 0.4s linear;
 }
@@ -267,6 +267,15 @@ i.fa-github {
     color:white;
     text-decoration:none;
 }
+
+.card {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
