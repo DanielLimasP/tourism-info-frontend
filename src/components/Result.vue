@@ -15,16 +15,19 @@
         </div>
         <div v-else-if="item.data.months" class="card-footer">
             <div v-if="item.category == 'Densidad'">
-                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Densidad por mes dada en ocupantes por habitacion" />
+                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Densidad dada en ocupantes por habitacion" />
             </div>
             <div v-if="item.category == 'Derrama economica'">
-                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Derrama economica por mes dada en Millones de pesos" />
+                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Derrama economica dada en Millones de pesos" />
             </div>
             <div v-if="item.category == 'Ocupacion hotelera'">
-                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Ocupacion hotelera por mes dada en porcentaje" />
+                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Porcentaje de ocupacion hotelera" />
             </div>
             <div v-if="item.category == 'Noches de estadia de los turistas'">
-                <Chart :itemId="item._id" :itemData="item.data" itemLabel=" Noches promedio por mes por turista" />
+                <Chart :itemId="item._id" :itemData="item.data" itemLabel=" Noches de ocupacion en total" />
+            </div>
+            <div v-if="item.category == 'Llegada de turistas'">
+                <Chart :itemId="item._id" :itemData="item.data" itemLabel="Turistas recibidos" />
             </div>
         </div>
     </div>

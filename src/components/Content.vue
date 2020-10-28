@@ -54,6 +54,7 @@
                 <div class="col-md-3">
                     <label for="sel3">Ciudad:</label>
                     <select v-model="selected_city" class="form-control" id="sel3">
+                        <option> </option>
                         <option>Ahumada</option>
                         <option>Aldama</option>
                         <option>Allende</option>
@@ -190,25 +191,25 @@ export default {
 
             // Year - Category
             if (query_year != "" && query_category != "" && query_city == "" && query_region == "") {
-                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&Category=" + query_category
+                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&category=" + query_category
             }
             // Year - Category - City
             else if (query_year != "" && query_category != "" && query_city != "" && query_region == "") {
-                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&Category=" + query_category + "&City=" + query_city
+                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&category=" + query_category + "&city=" + query_city
             }
             // Year - Category - Region
             else if (query_year != "" && query_category != "" && query_city == "" && query_region != "") {
-                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&Category=" + query_category + "&Region=" + query_region
+                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&category=" + query_category + "&region=" + query_region
             }
             // Year - City
             else if (query_year != "" && query_category == "" && query_city != "" && query_region == "") {
-                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&City=" + query_city
+                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&city=" + query_city
             }
             // Year - Region
             else if (query_year != "" && query_category == "" && query_city == "" && query_region != "") {
-                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&Region=" + query_region
+                fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&region=" + query_region
             }
-
+            console.log(fetch_url)
             let query_result = await fetch(fetch_url, {
                 method: 'GET'
             }).then(rawResponse => {
