@@ -8,43 +8,22 @@
     </div>
     <div class="card-footer">
         <h6> {{ item.data }} </h6>
-        <canvas v-bind:id="item._id"></canvas>
+        <Chart :itemId="item._id" />
     </div>
 </div>
 </template>
 
 <script>
-import Chart from 'chart.js'
-import chartDataTest from './data/chart-data-test'
+import Chart from './Chart'
 
 export default {
     name: "Result",
     props: {
         item: {}
     },
-    data() {
-        return {
-            chartDataTest
-        }
-    },
-    methods: {
-        createChart(chartId, chartData) {
-            const ctx = document.getElementById(chartId);
-            const myChart = new Chart(ctx, {
-                type: chartData.type,
-                data: chartData.data,
-                options: chartData.options,
-            });
-
-            return myChart
-        }
-    },
     components: {
-
-    },
-    mounted() {
-        this.createChart(this.item._id, this.chartDataTest)
-    },
+        Chart
+    }
 };
 </script>
 
