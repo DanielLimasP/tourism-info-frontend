@@ -186,9 +186,7 @@ export default {
 
             let fetch_url = ""
 
-            console.log(query_year, query_category, query_city, query_region)
-
-            if (query_year == "") console.log("Empty")
+            //console.log(query_year, query_category, query_city, query_region)
 
             // Year - Category
             if (query_year != "" && query_category != "" && query_city == "" && query_region == "") {
@@ -210,13 +208,13 @@ export default {
             else if (query_year != "" && query_category == "" && query_city == "" && query_region != "") {
                 fetch_url = "http://localhost:420/info/query/?year=" + query_year + "&region=" + query_region
             }
-            console.log(fetch_url)
+            //console.log(fetch_url)
             let query_result = await fetch(fetch_url, {
                 method: 'GET'
             }).then(rawResponse => {
                 return rawResponse.json();
             }).then(jsonResponse => {
-                console.log(jsonResponse);
+                //console.log(jsonResponse);
                 return jsonResponse
             });
             //console.log(query_result)

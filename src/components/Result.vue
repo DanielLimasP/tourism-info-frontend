@@ -1,9 +1,10 @@
 <template>
 <div class="card card-blob">
     <div class="card-header">
-        <h6> <b>Ciudad:</b> {{ item.city }} {{ item.year }} </h6>
-        <h6><b>Region:</b> {{ item.region }}</h6>
-        <h6><b>Indicador:</b> {{ item.category }}</h6>
+        <h4><b>{{ item.city }}</b></h4>
+        <h6><b>Indicador: </b>{{ item.category }}</h6>
+        <h6><b>Region: </b>{{ item.region }}</h6>
+        <h6><b>Año: </b>{{ item.year }}</h6>
     </div>
     <div class="card-body">
 

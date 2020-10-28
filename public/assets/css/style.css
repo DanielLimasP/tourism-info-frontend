@@ -133,7 +133,7 @@ span {
 #sidebar ul li a:hover {
     color: #32703d;
     background: #fff;
-    animation: vertical 10s;
+    animation: vertical 5s;
 }
 
 #sidebar ul li a i {
