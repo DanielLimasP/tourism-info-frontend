@@ -1,11 +1,12 @@
-export const chartDataTest = {
-  type: 'line',
+export const chartData = {
+  type: '',
   data: {
-    labels: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+    labels: [],
     datasets: [
       { // one line graph
-        label: 'Number of Moons',
-        data: [0, 0, 1, 2, 67, 62, 27, 14],
+        // TODO: Programatically change data.labels, data.datasets.label and data.datasets.data
+        label: '',
+        data: [],
         backgroundColor: [
           'rgba(54,73,93,.5)', // Blue
           'rgba(54,73,93,.5)',
@@ -29,8 +30,8 @@ export const chartDataTest = {
         borderWidth: 3
       },
       { // another line graph
-        label: 'Planet Mass (x1,000 km)',
-        data: [4.8, 12.1, 12.7, 6.7, 139.8, 116.4, 50.7, 49.2],
+        label: '',
+        data: [],
         backgroundColor: [
           'rgba(71, 183,132,.5)', // Green
         ],
@@ -55,4 +56,4 @@ export const chartDataTest = {
   }
 }
 
-export default chartDataTest;
+export default chartData;
