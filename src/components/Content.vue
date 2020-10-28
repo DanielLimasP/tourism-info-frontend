@@ -65,11 +65,11 @@
         </form>
     </div>
     <!-- Here we render the result of the queries -->
-    <ul id="array-rendering">
-        <li v-for="item in query_result_array" :key="item">
+    <div id="array-rendering">
+        <div v-for="item in query_result_array" :key="item">
             <Result :item="item" />
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 </template>
 
@@ -96,7 +96,7 @@ export default {
             let query_string = this.query.toString()
             // Query Params
             // ?year=2020&city=Juarez
-            let fetch_url = "http://96480e0e23a2.ngrok.io/info/query/?year=2020&wildcard=" + query_string
+            let fetch_url = "http://localhost:420/info/query/?year=2020&wildcard=" + query_string
 
             let query_result = await fetch(fetch_url, {
                 method: 'GET'
