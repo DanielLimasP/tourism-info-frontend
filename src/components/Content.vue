@@ -42,13 +42,13 @@
                     <label for="sel2">Categoria:</label>
                     <select v-model="selected_category" class="form-control" id="sel2">
                         <option> </option>
-                        <option>Densidad de ocupacion</option>
+                        <option>Densidad</option>
                         <option>Derrama economica</option>
                         <option>Establecimientos de hospedaje</option>
                         <option>Habitaciones</option>
-                        <option>Porcentaje de ocupacion</option>
+                        <option>Ocupacion hotelera</option>
                         <option>Llegada de turistas</option>
-                        <option>Noches promedio por turistas</option>
+                        <option>Noches de estadia de los turistas</option>
                     </select>
                 </div>
                 <div class="col-md-3">
@@ -178,6 +178,7 @@ export default {
             //console.log(this.query_result_array)
         },
         async createQuery() {
+
             let query_year = this.selected_year.toString()
             let query_category = this.selected_category.toString()
             let query_city = this.selected_city.toString()
