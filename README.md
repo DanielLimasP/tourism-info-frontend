@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 
+[Killer vue-chartjs guide](https://www.digitalocean.com/community/tutorials/vuejs-vue-chart-js)
