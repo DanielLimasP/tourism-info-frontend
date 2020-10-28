@@ -92,7 +92,7 @@ export default {
     },
     methods: {
         async searchBarQuery() {
-            console.log(this.query)
+            //console.log(this.query)
             let query_string = this.query.toString()
             // Query Params
             // ?year=2020&city=Juarez
@@ -108,7 +108,7 @@ export default {
             });
             //console.log(query_result)
             this.query_result_array = query_result.result
-            console.log(this.query_result_array)
+            //console.log(this.query_result_array)
         }
     }
 };

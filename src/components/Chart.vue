@@ -18,18 +18,18 @@ export default {
                         label: '',
                         data: [],
                         backgroundColor: [
-                            'rgba(54,73,93,.5)', // Blue
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)',
-                            'rgba(54,73,93,.5)'
+                            'rgba(20,101,20,.4)', // Blue
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)',
+                            'rgba(20,101,20,.4)'
                         ],
                         borderColor: [
                             '#36495d',
@@ -85,8 +85,10 @@ export default {
             for (var key in this.itemData.months) {
                 this.monthsData.push(this.itemData.months[key])
             }
-            for (var i = 0; i < this.monthsData.length; i++) {
-                console.log(this.monthsData[i])
+            this.chartData.data.datasets[0].data = this.monthsData
+            for (var i = 0; i < this.chartData.data.datasets[0].data; i++) {
+                this.chartData.data.datasets[0].data[i] = 1
+                console.log(this.chartData.data.datasets[0].data[i])
             }
 
         }
@@ -95,8 +97,8 @@ export default {
 
     },
     mounted() {
-        this.createChart(this.itemId, this.chartData)
         this.changeChartData()
+        this.createChart(this.itemId, this.chartData)
     },
 };
 </script>
