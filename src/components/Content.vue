@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse col-md-2" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-github fa-3x"></i></a>
+                        <a class="nav-link" href="https://github.com/DanielLimasP/tourism-info-frontend"><i class="fa fa-github fa-3x"></i></a>
                     </li>
                 </ul>
             </div>
