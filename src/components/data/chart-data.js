@@ -1,18 +1,18 @@
 // Chart data template
 export const chartData = {
-  type: '',
+  type: "",
   data: {
     labels: [],
     datasets: [
-      { 
-        label: '',
+      {
+        label: "",
         data: [],
         backgroundColor: [],
         borderColor: [],
         borderWidth: 3
       },
-      { 
-        label: '',
+      {
+        label: "",
         data: [],
         backgroundColor: [],
         borderColor: [],
@@ -24,14 +24,16 @@ export const chartData = {
     responsive: true,
     lineTension: 1,
     scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true,
-          padding: 25,
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            padding: 25
+          }
         }
-      }]
+      ]
     }
   }
-}
+};
 
 export default chartData;

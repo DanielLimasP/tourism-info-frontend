@@ -1,26 +1,24 @@
 <template>
-<div class="wrapper">
+  <div class="wrapper">
     <!-- Page Content  -->
     <Sidebar />
     <div id="content">
-        <Content />
+      <Content />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar'
-import Content from './components/Content'
+import Sidebar from "./components/Sidebar";
+import Content from "./components/Content";
 
 export default {
-    name: "App",
-    components: {
-        Sidebar,
-        Content
-    }
+  name: "App",
+  components: {
+    Sidebar,
+    Content
+  }
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

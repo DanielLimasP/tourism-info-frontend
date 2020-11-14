@@ -1,16 +1,10 @@
-<template>
-
-</template>
+<template> </template>
 
 <script>
 export default {
-    name: " ",
-    components: {
-
-    }
+  name: " ",
+  components: {}
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
