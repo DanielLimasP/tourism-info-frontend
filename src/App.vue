@@ -1,23 +1,26 @@
 <template>
-  <div class="wrapper">
+<div class="wrapper">
     <!-- Page Content  -->
     <Sidebar />
     <div id="content">
-      <Content />
+        <Content />
+        <Contact />
     </div>
-  </div>
+</div>
 </template>
 
 <script>
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
+import Contact from './views/Contact';
 
 export default {
-  name: "App",
-  components: {
-    Sidebar,
-    Content
-  }
+    name: "App",
+    components: {
+        Sidebar,
+        Content,
+        Contact
+    }
 };
 </script>
 
