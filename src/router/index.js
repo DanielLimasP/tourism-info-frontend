@@ -1,8 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
+import Contact from '../views/Contact'
 // TODO: Create and import components
 
-const routs = [
-    {}
+const routes = [
+    {
+        path: "/Contact",
+        name: "contact",
+        component: Contact
+    },
 ]
 
 const router = createRouter({
