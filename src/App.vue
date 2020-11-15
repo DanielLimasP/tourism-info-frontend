@@ -3,6 +3,7 @@
     <!-- Page Content  -->
     <Sidebar />
     <div id="content">
+        <!-- TODO: Add router-view  -->
         <Content />
     </div>
 </div>
